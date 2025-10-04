@@ -1,0 +1,20 @@
+body{
+    background-color: rgba(0, 0, 0, 0.808);
+}
+h1{
+    color: white;
+}
+a{
+    color: white;
+}
+
+div.conteiner{
+   display: flex;
+  justify-content: center; /* Alinha no eixo horizontal */
+  /*align-items: center; Alinha no eixo vertical */
+  height: 100vh;           /* 100% da altura da viewport */
+}
+div.centralizada{
+    padding: 20px;
+    text-align: center;
+}

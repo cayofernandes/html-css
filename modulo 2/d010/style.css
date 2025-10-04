@@ -1,0 +1,160 @@
+/*colors: 
+#84E1AD==> fundo
+#3DDB84==> primeia do degrade
+#1A5C38==> ultima do degrade, fundo do video
+#1E5F3C==> h
+#E1F5EA==> fundo do h2
+#2FA866==> header do artigo
+#C5EBD6==> fundo do artigo
+*/
+@charset "UTF-8";
+@font-face {
+    font-family: 'androids letters';
+    src: url(pacote-projeto-d010/fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+#principal{
+    background-image: linear-gradient(to bottom, #3DDB84, #1A5C38 ); 
+    text-align: center;
+    height: 180px;
+    color: white;
+    padding-top: 10px;
+    font-family: 'Segoe UI';
+}
+#principal> h2{
+    font-size: small;
+    font-weight: normal;
+}
+nav{
+    background-color:#1A5C38 ;
+    color: white;
+    text-align: left;
+}
+nav>a{
+    padding: 5px;
+}
+.nav{
+    color: white;
+}
+.nav::before{
+    content: none;
+}
+.nav:hover{
+    background-color: #446d56;
+}
+a{
+    color: #1A5C38;
+    text-decoration: none;
+}
+a::before{
+    content: '🔗';
+}
+.no-icon{
+    color: #1A5C38;
+    text-decoration: none;
+}
+.no-icon::before{
+    content: '';
+}
+section{
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+section > h1, section > h2{
+    font-family: 'androids letters';
+    text-align: left;
+    padding: 15px;
+    color: #1A5C38;
+}
+h1{
+    font-size: 2.5em;
+}
+section>h2{
+    background-image: linear-gradient(to right,#3DDB84, #ffffff);
+    margin: 15px;
+    font-size: 1.5em;
+    padding: 0px;
+    
+
+}
+p{
+    text-align: left;
+    text-indent: 20px;
+    padding: 20px;
+    font: 1.2em sans-serif;
+}
+main{
+    background-color: #84E1AD;
+    display: flex;
+  justify-content: center; /* Alinha no eixo horizontal */
+  /*align-items: center; Alinha no eixo vertical */
+  height: 100%;           /* 100% da altura da viewport */
+}
+img{
+    width:96%;
+    padding: 20px;
+}
+section{
+    background-color: white;
+    width: 75%;
+    text-align: center;
+    height: 100%;
+
+}
+#video{
+    background-color:#1A5C38 ;
+    position: relative; /*faz com que elementos filhos com position absolute sejam posicionados em relação a essa div e não ao body*/
+    height: 100%;
+    width: 100%;
+    padding-bottom: 56,25; /*proporção ideal para videos 16/9*/
+    overflow: hidden; /*se algo sair dessa div, será cortado*/
+    align-items: center;
+    border-radius: 0px;
+    padding-bottom: 5px;
+
+    
+}
+iframe{
+    width: 75%;
+    
+}
+ul{
+    column-count:2 ;
+    text-align: left;
+    
+}
+li::marker{ /*marcador especial pra lista*/
+    content:'✔' ;
+}
+article{
+    background-color: #C5EBD6;
+    color:black;
+    margin: 15px;
+    border-radius: 10px;
+    text-indent: 15px;
+
+}
+article>header{
+    background-color:#2FA866 ;
+    color: white;
+    margin: 0px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 1em;
+}
+footer{
+    background-color: #1A5C38;
+    color:#84E1AD;
+    margin: 0px;
+    text-align: center;
+    font-size: 1em;
+}
+.footer{
+    text-decoration: none;
+    color 
+    :#ffffff;
+}
+.footer::before{
+    content: '';
+}

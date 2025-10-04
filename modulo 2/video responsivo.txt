@@ -1,0 +1,14 @@
+.video{
+    
+    background-color:#1A5C38 ;
+    position: relative; /*faz com que elementos filhos com position absolute sejam posicionados em relação a essa div e não ao body*/
+    height: 300px;
+    width: 100px;
+    padding-bottom: 56,25; /*proporção ideal para videos 16/9*/
+    overflow: hidden; /*se algo sair dessa div, será cortado*/
+    align-items: center;
+}
+iframe{
+    width: 75%;
+    
+}
